@@ -1,0 +1,15 @@
+Oldal készítőjének neve: Orosz Gergő
+
+Weblap URL címe: [Illeszd be a tárhelyen elérhető URL-t]
+
+Weboldal leírása: 
+A "Kontinentális ízek" weboldal különböző kontinensek hagyományos ételeit mutatja be, receptjeikkel, gasztronómiai érdekességeikkel. A cél egy könnyen használható, informatív receptgyűjtemény bemutatása.
+
+Saját JavaScript kód helye és leírása: 
+A saját JavaScript kód az „index.html” és az összes többi receptes fájlban fájlban található. Célja, hogy a recepteknél megjelenítse az adagok számát a felhasználó által megadott érték alapján, dinamikusan frissítve a hozzávalók mennyiségét.
+
+Használt egyedi fontok: 
+times new roman
+
+Átvett kód forrásai: 
+- imageMapresizer.min.js

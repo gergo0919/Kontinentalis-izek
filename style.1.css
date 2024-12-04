@@ -39,6 +39,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; 
+    flex-wrap: nowrap;
     flex-basis: 100%;
     padding: 10px; 
     background-color: #B23A48; 

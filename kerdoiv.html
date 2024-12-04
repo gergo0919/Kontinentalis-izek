@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kérdőív</title>
+    <meta name="Orosz Gergő" content="Kontinentális ízek">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Receptes weblap karácsonyi ételekkel">
+    <link rel="stylesheet" href="style.1.css">
+    <link rel="icon" href="logo.fold-modified.png" type="image/x-icon">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js">
+    </script>
+    <script> $(document).ready(function () {
+            $("#formom").validate({
+                rules: {
+                    ausztral: "required",
+                    mennyi: "required",
+
+                    hasznal: "required",
+                    szul: "required",
+                    megfelel: "required",
+                    melyikkontinens: {
+                        required: true,
+                    },
+                    velemeny: "required",
+                },
+                messages: {
+                    ausztral: "<p>ettél már?</p>",
+                    mennyi: "<p>Mennyit kóstóltál?</p>",
+
+                    hasznal: "<p>Kérlek add meg!</p>",
+                    szul: "<p>Add meg a születési dátumod!</p>",
+                    megfelel: "<p>Kérlek add meg!</p>",
+                    melyikkontinens: {
+                        required: "<p>Kérlek add meg!</p>",
+                    },
+                    velemeny: "<p>Írd meg a véleményedet!</p>",
+                },
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="logo">
+                <img src="logo.fold.jpg"
+                    alt="A kép Egy földgömböt ábrázol, amelyen finom illusztrációk találhatók kontinentális ételekről, mint például kenyér, tészta, sushi, taco és steak.">
+            </div>
+            <h1>Kontinentális ízek</h1>
+            <div class="logo">
+                <img src="logo.fold.jpg"
+                    alt="A kép Egy földgömböt ábrázol, amelyen finom illusztrációk találhatók kontinentális ételekről, mint például kenyér, tészta, sushi, taco és steak."
+                    class="tukor">
+            </div>
+
+        </header>
+        <div class="menu">
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="receptek.html" >Receptek</a></li>
+                    <li><a href="kedvenced.html">Kedvenced</a></li>
+                    <li><a href="kerdoiv.html" class="active">Kérdőív</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="kerdoiv">
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="formom">
+                <div id="urlap">
+                    <h2 class="kerdoivcim">Kérlek töltsd ki a kérdőívet!</h2><br>
+                    <p><label>Nem kóstóltam meg az ausztrál ételt. &nbsp;
+                            <input type="radio" name="ausztral" value="nem" id="nemausztral"></label></p>
+
+                    <p><label>Megkóstóltam az ausztrál ételt &nbsp;
+                            <input type="radio" name="ausztral" value="igen" id="igenausztral"></label></p>
+
+
+                    <p><label>
+                            Mennyi receptet kóstóltál meg? <input type="number" name="mennyi" max="24" min="1"></label>
+                    </p>
+                    <p><label for="hasznal">
+                            Használnád a weblapot későbbi receptekhez? </label>
+                    </p>
+                    <p><label>
+                            Igen <input type="radio" name="hasznal" value="igen" id="hasznal">
+                        </label></p>
+                    <p><label>
+                            Nem <input type="radio" name="hasznal" value="nem">
+                        </label></p>
+                    <p><label>
+                            Add meg a születési dátumodat: <input type="date" name="szul"></label>
+                    </p>
+                    <p><label for="megfelelo">
+                            Szerinted megfelelő receptek vannak a weblapon?</label>
+                    </p>
+                    <p><label>
+                            Igen <input type="radio" name="megfelel" value="igen" id="megfelelo">
+                        </label></p>
+                    <p><label>
+                            Nem <input type="radio" name="megfelel" value="nem">
+                        </label></p>
+                    <p><label>Melyik kontinenset választanád a receptek alapján?<br><br>
+                            <select name="melyikkontinens" size="1">
+                                <option disabled selected>Válassz</option>
+                                <option value="Európa">Európa</option>
+                                <option value="Afrika">Afrika</option>
+                                <option value="Amerika">Amerika</option>
+                                <option value="Ázsia">Ázsia</option>
+                                <option value="Ausztrália">Ausztrália</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p><label for="hanypont">Mennyire tetszett ez a weboldal?</label></p>
+                    <input type="range" name="tetszett" min="1" max="10" step="1" value="5" id="hanypont">
+                    <p><label for="velemeny">Vélemény</label></p>
+                    <textarea name="velemeny" id="velemeny"
+                        placeholder="Bármilyen megjegyeznivalót írj le ide nyugodtan!"></textarea>
+                    <p>
+                        <input value="Elküldés" type="submit">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input value="Törlés" type="reset">
+                    </p>
+                </div>
+            </form>
+        </div>
+        </div>
+        <footer>
+            <p>Az oldal szimplán tanulmányi célokra szolgál.<br>&copy;2024 Corvinus</p>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedvenced</title>
+    <meta name="Orosz Gergő" content="Kontinentális ízek">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Receptes weblap karácsonyi ételekkel">
+    <link rel="stylesheet" href="style.1.css">
+    <link rel="icon" href="logo.fold-modified.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="logo">
+                <img src="logo.fold.jpg"
+                    alt="A kép Egy földgömböt ábrázol, amelyen finom illusztrációk találhatók kontinentális ételekről, mint például kenyér, tészta, sushi, taco és steak.">
+            </div>
+            <h1>Kontinentális ízek</h1>
+            <div class="logo">
+                <img src="logo.fold.jpg"
+                    alt="A kép Egy földgömböt ábrázol, amelyen finom illusztrációk találhatók kontinentális ételekről, mint például kenyér, tészta, sushi, taco és steak."
+                    class="tukor">
+            </div>
+
+        </header>
+        <div class="menu">
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="receptek.html">Receptek</a></li>
+                    <li><a href="kedvenced.html" class="active">Kedvenced</a></li>
+                    <li><a href="kerdoiv.html">Kérdőív</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="kviz">
+            <h1>Melyik kontinens illik hozzád a legjobban?</h1>
+            <form>
+                <div class="kerdes">
+                    <h3>1. milyen féle ételt ennél most legszívesebben</h3>
+                    <div class="valaszok">
+                        <br><label><input type="radio" name="q1" value="europa" id="a1" required> Gazdag hagyományos
+                            ételeket.</label>
+                        <label><input type="radio" name="q1" value="azsia" id="a2"> Fűszeres, egzotikus
+                            ételeket.</label>
+                        <label><input type="radio" name="q1" value="amerika" id="a3"> gazdag, laktató, intenzív, sós,
+                            füstös, édes és csípős ételeket </label>
+                        <label><input type="radio" name="q1" value="afrika" id="a4"> Egyszerű, fűszeres és autentikus
+                            ételeket</label>
+                        <label><input type="radio" name="q1" value="afrika" id="a5"> Friss és egyszerű tengeri és húsos
+                            ételeket</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <h3>2. Mennyire bírod a fűszeres ételeket?</h3><br>
+                    <div class="valaszok">
+                        <label><input class="csuszka" type="range" value="5" min="1" max="10" step="1" id="b"></label>
+                        <p>Érték: <span id="ertek">5</span>
+
+                    </div>
+                </div>
+                <div class="kerdes"><br>
+                    <h3>3. Milyen időjárásban laknál a legszívesebben</h3><br>
+                    <div class="valaszok">
+                        <label><input type="radio" name="q2" value="europa" id="c1" required>Négy évszakos,
+                            tavaszi virágokkal és havas telekkel.</label>
+                        <label><input type="radio" name="q2" value="azsia" id="c2">Meleg dzsungelek, esős
+                            monszunok és száraz sivatagok.</label>
+                        <label><input type="radio" name="q2" value="amerika" id="c3">Változatos időjárás,
+                            havas hegyekkel és napos tengerpartokkal.</label>
+                        <label><input type="radio" name="q2" value="afrika" id="c4">Forró sivatagok és esős
+                            dzsungelek.</label>
+                        <label><input type="radio" name="q2" value="ausztralia" id="c5">Meleg tájak, vörös
+                            sivatagok és trópusi partok.</label>
+
+                    </div>
+                </div>
+                <div class="kerdes">
+                    <h3>4. Melyik édességet választanád?</h3><br>
+                    <div class="valaszok">
+                        <label><input type="radio" name="q3" value="europa" id="d1" required>Csokoládétorta
+                            (gazdag, vajas sütemény sok sok csokoládéval).</label>
+                        <label><input type="radio" name="q3" value="azsia" id="d2">Mochi (rágós rizstészta édes
+                            töltelékkel).</label>
+                        <label><input type="radio" name="q3" value="amerika" id="d3">Brownie (sűrű, csokoládés
+                            sütemény, ropogós kérges tetejével).</label>
+                        <label><input type="radio" name="q3" value="afrika" id="d4">Mézes gyümölcs (friss
+                            gyümölcsök édes, mézes mázban).</label>
+                        <label><input type="radio" name="q3" value="ausztralia" id="d5">Pavlova (habcsók
+                            alapú torta tejszínhabbal és gyümölcsökkel).</label>
+                    </div>
+
+                </div>
+                <div class="kerdes">
+                    <h3>5. Hova utaznál el egy hétre szívesebben?</h3><br>
+                    <div class="valaszok">
+                        <label><input type="radio" name="q4" value="europa" id="e1" required> Párizs</label>
+                        <label><input type="radio" name="q4" value="azsia" id="e2"> Tokió</label>
+                        <label><input type="radio" name="q4" value="amerika" id="e3"> New York</label>
+                        <label><input type="radio" name="q4" value="afrika" id="e4"> Kairó</label>
+                        <label><input type="radio" name="q4" value="ausztralia" id="e5"> Sydney</label>
+                    </div>
+
+                </div>
+                <div class="kerdes">
+                    <h3>6. ketchuppal eszed a milánóit?</h3><br>
+                    <div class="valaszok">
+                        <label><input type="radio" name="ketchup" value="igen" id="f1" required> Igen</label>
+                        <label><input type="radio" name="ketchup" value="nem" id="f2"> Nem</label>
+
+                    </div>
+                </div>
+                <div class="kerdes">
+                    <h3>7. Válaszd ki a kedvenc fűszereidet/ízeidet</h3><br>
+                    <div class="valaszok">
+                        <label><input type="checkbox" name="q5" value="europa" id="g1"> oregánó</label>
+                        <label><input type="checkbox" name="q5" value="azsia" id="g2"> gyömbér</label>
+                        <label><input type="checkbox" name="q5" value="amerika" id="g3"> chili</label>
+                        <label><input type="checkbox" name="q5" value="afrika" id="g4"> fahéj</label>
+                        <label><input type="checkbox" name="q5" value="ausztralia" id="g5"> citromfű</label>
+                        <label><input type="checkbox" name="q5" value="europa" id="g6"> bazsalikom</label>
+                        <label><input type="checkbox" name="q5" value="azsia" id="g7"> szójaszósz</label>
+                        <label><input type="checkbox" name="q5" value="amerika" id="g8"> koriander</label>
+                        <label><input type="checkbox" name="q5" value="afrika" id="g9"> kömény</label>
+                        <label><input type="checkbox" name="q5" value="ausztralia" id="g10"> menta</label>
+                    </div>
+                </div>
+                <div class="egomb">
+                    <input type="button" id="eredmeny" value="Eredmény"> &nbsp;&nbsp;
+                    <input type="reset" id="torol" value="Törlés">
+                    <input type="button" id="ugras" value="Ugrás">
+                </div>
+                <br>
+                <div id="kiiras" class="kiiras"></div>
+                <div class="kep" id="kep"></div>
+            </form>
+
+        </div>
+        <footer>
+            <p>Az oldal szimplán tanulmányi célokra szolgál.<br>&copy;2024 Corvinus</p>
+        </footer>
+
+        <script src="quiz.js">
+        </script>
+    </div>
+    </body>
+    </html>
+    
